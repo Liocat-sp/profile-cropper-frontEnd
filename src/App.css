@@ -1,17 +1,13 @@
-.App {
-  text-align: center;
+.navigation {
+  height: 8vh;
+  background-color: #2e74ff;
+  box-shadow: 0 6px 20px #2e74ff9e;
+}
+main{
+  position: relative;
+  height: 92vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;

@@ -5,7 +5,8 @@ import ImageCropper from './ImageCropper/imageCropper';
 function App() {
   return (
     <div className="App">
-      <ImageCropper />
+      <nav className="navigation"></nav>
+      <main><ImageCropper /></main>
     </div>
   );
 }
