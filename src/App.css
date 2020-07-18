@@ -1,7 +1,28 @@
+*{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
 .navigation {
   height: 8vh;
   background-color: #2e74ff;
   box-shadow: 0 6px 20px #2e74ff9e;
+}
+.nav_head {
+  height: 100%;
+}
+.nav_head h2{
+  margin: 0;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main{
   position: relative;
