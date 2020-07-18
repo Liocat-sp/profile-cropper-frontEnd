@@ -54,13 +54,16 @@ const ImageCropper = (props) => {
         try {
             setisLoading(true);
             const croppedImage = await crop(cropper.imageUrl, pixel);
-            setimageUrl(croppedImage);
             onModalClose();
             setisLoading(false);
             const formData = new FormData();
             formData.append('image', croppedImage);
             const response = await fetch('http://localhost:5000/image', { method: "POST", body: formData });
             const get = await response.json();
+            console.log(get);
+            if (!get.url) {
+                setimageUrl(croppedImage);
+            }
             setCroppedImage('http://localhost:5000/uploads/' + get.url);
             console.log(get);
         }
@@ -78,8 +81,9 @@ const ImageCropper = (props) => {
             {isLoading && <Loader asOverLay />}
             <div className="Cropper">
                 <div className="profile_pic">
-                    {croppedImage && <img src={imageUrl?imageUrl:croppedImage} alt="croped" />}
-                    {imageUrl && <img src={imageUrl?imageUrl:croppedImage} alt="croped" />}
+                    {croppedImage && <img src={imageUrl ? imageUrl : croppedImage} alt="croped" />}
+                    {/* This is in case backend is not available */}
+                    {imageUrl && <img src={imageUrl ? imageUrl : croppedImage} alt="croped" />} 
                 </div>
                 <div className="img_container">
                     <input
