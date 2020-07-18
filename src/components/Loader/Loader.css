@@ -1,0 +1,40 @@
+.dual-ring {
+    z-index: 50;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .dual-ring:after {
+    content: ' ';
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #2e74ff;
+    border-color: #2e74ff transparent #2e74ff transparent;
+    animation: dual-ring 1.2s linear infinite;
+  }
+  
+  .loading-overlay {
+      z-index: 45;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(169 169 169 / 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

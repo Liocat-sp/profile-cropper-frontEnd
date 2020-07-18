@@ -1,0 +1,47 @@
+.Cropper {
+    width: 90%;
+    height: 95%;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profile_pic {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #2e74ff;
+    background-color: #3f76e340;
+}
+.profile_pic img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+.img_picker {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #000;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius:   6px;
+    border: 1px solid #3f76e3;
+    box-shadow: 0 6px 20px #3f76e396;
+    outline: none;
+    transition: box-shadow 300ms; 
+}
+.img_picker:hover {
+    box-shadow: 0 12px 24px #3f76e396;
+}
+.img_picker:active {
+    transform: translateY(2px);
+}
+/* .crop_box {
+    width: 500px;
+    height: 500px;
+    position: relative;
+} */
