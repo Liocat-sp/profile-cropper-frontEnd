@@ -8,6 +8,7 @@ import Loader from '../components/Loader/Loader';
 const ImageCropper = (props) => {
     const [image, setImage] = useState();
     const piker = useRef();
+    const [imageUrl, setimageUrl] = useState(null);
     const [onShow, setOnshow] = useState(false);
     const [isLoading, setisLoading] = useState(false);
     const [pixel, setPixel] = useState();
@@ -53,6 +54,7 @@ const ImageCropper = (props) => {
         try {
             setisLoading(true);
             const croppedImage = await crop(cropper.imageUrl, pixel);
+            setimageUrl(croppedImage);
             onModalClose();
             setisLoading(false);
             const formData = new FormData();
@@ -74,10 +76,10 @@ const ImageCropper = (props) => {
     return (
         <React.Fragment>
             {isLoading && <Loader asOverLay />}
-
             <div className="Cropper">
                 <div className="profile_pic">
-                    {croppedImage && <img src={croppedImage} alt="croped" />}
+                    {croppedImage && <img src={imageUrl?imageUrl:croppedImage} alt="croped" />}
+                    {imageUrl && <img src={imageUrl?imageUrl:croppedImage} alt="croped" />}
                 </div>
                 <div className="img_container">
                     <input
