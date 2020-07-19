@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/profile-cropper-frontEnd/static/css/main.118bc7db.chunk.css",
+    "main.js": "/profile-cropper-frontEnd/static/js/main.d7cdf72a.chunk.js",
+    "main.js.map": "/profile-cropper-frontEnd/static/js/main.d7cdf72a.chunk.js.map",
+    "runtime-main.js": "/profile-cropper-frontEnd/static/js/runtime-main.da200b7d.js",
+    "runtime-main.js.map": "/profile-cropper-frontEnd/static/js/runtime-main.da200b7d.js.map",
+    "static/js/2.7b3a50e7.chunk.js": "/profile-cropper-frontEnd/static/js/2.7b3a50e7.chunk.js",
+    "static/js/2.7b3a50e7.chunk.js.map": "/profile-cropper-frontEnd/static/js/2.7b3a50e7.chunk.js.map",
+    "index.html": "/profile-cropper-frontEnd/index.html",
+    "precache-manifest.a7be04e16755d345243935422c73eae2.js": "/profile-cropper-frontEnd/precache-manifest.a7be04e16755d345243935422c73eae2.js",
+    "service-worker.js": "/profile-cropper-frontEnd/service-worker.js",
+    "static/css/main.118bc7db.chunk.css.map": "/profile-cropper-frontEnd/static/css/main.118bc7db.chunk.css.map",
+    "static/js/2.7b3a50e7.chunk.js.LICENSE.txt": "/profile-cropper-frontEnd/static/js/2.7b3a50e7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da200b7d.js",
+    "static/js/2.7b3a50e7.chunk.js",
+    "static/css/main.118bc7db.chunk.css",
+    "static/js/main.d7cdf72a.chunk.js"
+  ]
+}
